@@ -1,0 +1,45 @@
+/* Auth pages shared styles */
+.auth-container {
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-card {
+  transition: all 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Form styles */
+.ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.ant-input-affix-wrapper:hover,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+.ant-btn-primary {
+  background: linear-gradient(90deg, #1890ff 0%, #096dd9 100%);
+  transition: all 0.3s ease;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(90deg, #40a9ff 0%, #1890ff 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .auth-card {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
